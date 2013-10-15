@@ -95,8 +95,8 @@
     <div class="meta">
         <span class="submitted">
           <?php
-           /* print t('Submitted by !username on !datetime',
-              array('!username' => $name, '!datetime' => $date));*/
+            print t('Submitted by !username on !datetime',
+              array('!username' => $name, '!datetime' => $date));
           ?>
         </span>
     </div>

@@ -501,3 +501,5 @@ $conf['404_fast_html'] = '<html xmlns="http://www.w3.org/1999/xhtml"><head><titl
  * Remove the leading hash signs to disable.
  */
 # $conf['allow_authorize_operations'] = FALSE;
+
+ini_set('error_reporting', 'E_ALL ^ E_NOTICE');

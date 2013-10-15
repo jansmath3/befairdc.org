@@ -162,6 +162,7 @@
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
+    <?php if ($page['footer'] || $page['secondary_links']): ?>
       <div id="footer"><div class="section">
 
       <?php print theme('links__system_secondary_menu', array(
@@ -190,11 +191,13 @@
   			  <?php print render($page['footer']); ?>
 
       </div></div> <!-- /.section, /#footer -->
+    <?php endif; ?>
 
   </div></div> <!-- /#page, /#page-wrapper -->
 
   <?php print render($page['page_closure']); ?>
 
   <?php print render($page['page_bottom']); ?>
+
 </body>
 </html>
